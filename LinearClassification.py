@@ -66,4 +66,7 @@ plt.plot(r.history["accuracy"], label = "acc")
 plt.plot(r.history["val_accuracy"], label = "val_acc")
 plt.legend()
 
-#End
+#Predict
+p = model.predict(x_test)
+#print("manually calculated accuracy:", np.mean(P == y_test))
+print("evaluate output:", model.evaluate(x_test, y_test))
