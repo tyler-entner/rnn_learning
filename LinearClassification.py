@@ -65,3 +65,5 @@ plt.legend()
 plt.plot(r.history["accuracy"], label = "acc")
 plt.plot(r.history["val_accuracy"], label = "val_acc")
 plt.legend()
+
+#End
